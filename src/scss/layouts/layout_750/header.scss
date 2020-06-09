@@ -1,0 +1,16 @@
+.header-content {
+    &__text {
+        width: 60%;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    &__item {
+        &_heading {
+            @include subheading(4rem, _, $white)
+        }
+        &_tagline {
+            @include heading($white, 4rem)
+        }
+    }
+}

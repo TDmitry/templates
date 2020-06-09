@@ -1,0 +1,108 @@
+.btn {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0px 18px 23px -15px rgba(0,0,0,.5);
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    &_white {
+        color: $white;
+        background-color: $red;
+    }
+    &_red {
+        color: $red;
+        background-color: $white;
+    }
+    &:focus {
+        box-shadow: 0 0 15px $red;
+        transition: .4s;
+    }
+}
+
+.btn_subscribe {
+    color: $white;
+    border: 1px solid $white;
+    padding: 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+        box-shadow: 0 0 10px $white;
+        transition: .4s;
+    }
+    &:disabled {
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+
+.btn_question-form {
+    width: 100%;
+    &:disabled {
+        background-color: $white;
+        color: $red;
+        border: 2px solid $gray;
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.btn_learnmore {
+    margin-bottom: 0
+}
+
+.up-btn {
+    border-radius: 100%;
+    background-color: $red;
+    padding: .8rem;
+    border: 3px solid $white;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    margin-left: -40px;
+    &:hover {
+        transform: scale(1.1);
+        transition: .4s;
+    }
+    &__item {
+        width: 50px;
+        height: 45px;
+    }
+}
+
+.btn-book {
+    animation: hello 2s;
+}
+            @keyframes hello {
+                0% {transform: scale(1.2);}
+                25% {transform: scale(.7);}
+                50% {transform: scale(1.2);}
+                100% {transform: scale(1);}
+            }
+
+@media screen and (min-width: 375px) {
+    .btn {
+        padding: 1rem 2rem;
+    }
+}   
+
+@media screen and (min-width: 750px) {
+    .btn {
+        padding: 1rem 3rem;
+        font-size: 1.1rem;
+    }
+}   
+
+@media screen and (min-width: 968px) {
+    .btn {
+        padding: 1.6rem 3rem;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: .4s;
+        }
+    }
+}   

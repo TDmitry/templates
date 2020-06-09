@@ -1,0 +1,11 @@
+.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-transition {
+    background-image: url(../../../assets/img/svg/angle-down-solid.svg); 
+    transition: .4s;
+}

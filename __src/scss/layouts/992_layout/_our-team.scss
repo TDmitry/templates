@@ -1,0 +1,19 @@
+.our-team {
+    max-width: 1200px;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.our-team-block {
+    flex-wrap: nowrap;
+    width: 100%;
+    @include e(item) {
+        min-width: 23%;
+    }
+}
+
+.social-links__item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}

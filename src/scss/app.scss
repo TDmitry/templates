@@ -1,17 +1,17 @@
-@import "variables/media";
-
-@import "mixin/media";
-
-@import "util/grid";
-
-@import "lib/normalize";
-
-@import "modifier/margin";
+@import 'variables';
+@import 'mixin';
+@import 'module';
 
 @import 'base/base';
 @import 'base/fonts';
 
-@import 'module/cat';
+@import './layouts/layout_000/';
 
+@media screen and (min-width: 768px) {
+    @import './layouts/layout_750/'
+}
+@media screen and (min-width: 968px) {
+    @import './layouts/layout_968/'
+}
 
-
+@import './tech/'

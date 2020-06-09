@@ -1,0 +1,9 @@
+.our-team-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    @include e(item) {
+        min-width: 48%;
+        margin: 1%;
+    }
+}

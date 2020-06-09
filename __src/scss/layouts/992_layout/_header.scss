@@ -1,0 +1,59 @@
+.menu-navigation {
+    justify-content: space-evenly;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.menu-desktop__link {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    &:hover {
+        color: $baseColor;
+        transition: .5s;
+     }
+}
+.learn-more-content {
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: auto auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas: 
+        "slogan img"
+        "text-block img"
+        "btn img"
+    ;
+    @include e(slogan) {
+        align-self: center;
+        font-size: 3.5rem;
+    }
+    @include e(text-block) {
+        line-height: 2;
+        font-size: $baseFontSize;
+    }
+    @include e(btn) {
+        max-width: 370px;
+    }
+} 
+
+
+.btn {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    @include m(statistics) {
+        font-size: 1.1rem;
+    }
+    &:hover {
+        box-shadow: 0 5px 20px $baseColor;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    
+}
+
+.img-block_learn {
+    box-shadow: none;
+    background: url(#{$imgPath}/svg/hero-area.svg) no-repeat;
+    background-size: cover;
+}
+

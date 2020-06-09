@@ -1,0 +1,29 @@
+.our-story {
+    min-height: 100vh;
+    &__inner {
+        width: 55%;
+        justify-self: flex-end;
+        justify-content: center;
+        margin-left: auto;
+        min-height: 70%;
+    }
+    &__inner-heading {
+        font-size: 4.5rem;
+    }
+    &__inner-subheading {
+        font-size: 4rem;
+    }
+    &__content {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .our-story {
+        &__content {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+    }
+}   

@@ -1,0 +1,28 @@
+.our-story {
+    background: url('../../../assets/img/wood2.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    &__inner {
+        background-color: $white;
+       @include column;
+        padding: 1rem;
+    }
+    &__inner-heading {
+        @include heading;
+    }
+    &__inner-subheading {
+        @include subheading
+    }
+    &__content {
+        text-align: center;
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}

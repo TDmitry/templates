@@ -1,0 +1,105 @@
+.features {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 2rem;
+    grid-template-rows: 6% repeat(3, 1fr) auto repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+        "title"
+        "design"
+        "purpose"
+        "responsive"
+        "img"
+        "workingform"
+        "kitties"
+        "techs"
+    ;
+    @include e(item){
+        padding: 2rem 1rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+        display: grid;
+        grid-gap: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: auto;
+
+        grid-template-areas: 
+        "item-ico"
+        "item-title"
+        "item-text"
+        ;
+
+
+        @include m(design) {
+            grid-area: design;
+        }
+        @include m(purpose) {
+            grid-area: purpose;
+        }
+        @include m(repsponsive) {
+            grid-area: responsive;
+        }
+        @include m(workingform) {
+            grid-area: workingform;
+        }
+        @include m(kitties) {
+            grid-area: kitties;
+        }
+        @include m(techs) {
+            grid-area: techs;
+        }
+    }
+    @include e(title) {
+        font-size: 2rem;
+        grid-area: title;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $baseColor;
+    }
+    @include e(item-title) {
+        grid-area: item-title;
+        font-size: 2rem;
+        align-self: center;
+    }
+    @include e(item-text) {
+        grid-area: item-text;
+        font-size: $phFontSize;
+        line-height: 1.8;
+    }
+    @include e(item-ico) {
+       grid-area: item-ico;
+       align-self: center;
+       width: 50px;
+       height: 50px;
+        @include m(design) {
+            background: url(../../../../img/svg/icons/cogs-solid.svg) no-repeat;
+        }
+        @include m(purpose) {
+            background: url(../../../../img/svg/icons/laptop-code-solid.svg) no-repeat;
+        }
+        @include m(responsive) {
+            background: url(../../../../img/svg/icons/leaf-solid.svg) no-repeat;
+        }
+        @include m(workingform) {
+            background: url(../../../../img/svg/icons/newspaper-regular.svg) no-repeat;
+        }
+        @include m(kitties) {
+            background: url(../../../../img/svg/icons/paw-solid.svg) no-repeat;
+        }
+        @include m(techs) {
+            background: url(../../../../img/svg/icons/user-regular.svg) no-repeat;
+        }
+    }  
+}
+
+.img-block {
+    grid-area: img;
+    padding-top: 2rem;
+    @include m(no-shadow) {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,14 @@
+.our-story {
+    padding: 3rem;
+    height: 100vh;
+    &__inner {
+        color: $gray;
+        padding: 3rem 2rem;
+    }
+    &__content {
+        font-size: 1.1rem;
+    }
+    &__inner-subheading {
+        margin-bottom: 1rem;
+    }
+}

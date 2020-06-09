@@ -1,0 +1,27 @@
+.question-form {
+    background: url("../../../assets/img/wood.jpg") no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question-form-inner {
+    background-color: $white;
+    text-align: center;
+    padding: 1rem;
+    @include column;
+    &__heading {
+        @include heading($red, 1.5rem);
+    }
+    &__subheading {
+        @include subheading(1.3rem, 2rem)
+    }
+}
+.question-form-inner-form {
+    width: 100%;
+    &__input {
+        width: 100%;
+    }
+}

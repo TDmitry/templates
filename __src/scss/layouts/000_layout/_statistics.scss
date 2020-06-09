@@ -1,0 +1,34 @@
+.statistics {
+    background-color: $gray;
+    padding: 0 2rem;
+}
+.statistics-container {
+    display: grid;
+    padding: 1rem 0;
+    grid-gap: 2rem;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "subtitle"
+        "title"
+        "content"
+        "btn"
+        "img"
+    ;
+    @include e(title) {
+        grid-area: title;
+        font-size: 2.5rem;
+    }
+    @include e(subtitle) {
+        padding-top: 2rem;
+        font-size: 1.3rem;
+        grid-area: subtitle;
+    }
+    @include e(content) {
+        line-height: 1.5;
+        grid-area: content;
+        font-size: $phFontSize;
+    }
+}
+.btn_statistics {
+    max-width: 250px;
+}

@@ -1,0 +1,33 @@
+.question-form{
+    justify-content: flex-start;
+    padding: 1rem 4rem;
+}
+
+.question-form-inner {
+    width: 60%;
+    &__heading {
+        font-size: 4rem;
+    }
+    &__subheading {
+        font-size: 4rem;
+    }
+}
+
+.question-form-inner-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__input {
+        flex: 1;
+        margin-right: 1rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .question-form-inner {
+        width: 50%;
+    }
+}

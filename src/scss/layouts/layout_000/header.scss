@@ -1,0 +1,68 @@
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5)),
+    url('../../../assets/img/index01.jpg');
+    background-size: cover;
+    background-position: left 50% top 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    animation: opacity 1.5s ease-out;
+}
+.header-logo-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid $white;
+    position: relative;
+    &__menu-btn {
+        background: url('../../../assets/img/svg/bars-solid.svg') no-repeat;
+        padding: 1.5rem;
+    }
+}
+
+.logo {
+    max-width: 150px;
+}
+
+
+
+.header-content {
+    @include column;
+    margin: auto;
+    &__item {
+        text-shadow: 5px 5px 5px $gray;
+        &_heading {
+            @include subheading(3rem, 0, $white);
+        }
+        &_tagline {
+            @include heading($white, 2rem);
+            padding: 1rem 0;
+        }
+    }
+    &__text {
+        color: $white;
+        text-align: center;
+        padding: 1rem;
+        line-height: 1.3rem;
+        text-shadow: 3px 3px 3px $gray;
+    }
+}
+
+.header-content-btn-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_margin {
+    margin-right: 1rem;
+}
+
+@keyframes opacity {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+

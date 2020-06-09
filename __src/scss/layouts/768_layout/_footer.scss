@@ -1,0 +1,22 @@
+.contact-form {
+    grid-template-columns: auto auto;
+    padding: 3rem;
+    grid-template-areas: 
+        "title title"
+        "name email"
+        "message message"
+        "btn btn"
+        "map map"
+    ;
+}
+
+.form-input {
+    max-width: 100%;
+}
+
+
+// ------------- map ------------
+.map {
+    grid-area: map;
+    padding: 0;
+  }

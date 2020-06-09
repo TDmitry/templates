@@ -1,0 +1,79 @@
+.footer {
+    background-color: $red;
+    padding: 2rem 1rem;
+    @include column;
+}
+
+.footer-wrapper {
+    position: relative;
+}
+.footer-main {
+    @include column;
+    &__heading {
+        @include heading($white);
+        margin-bottom: 1rem
+    }
+    &__text {
+        color: $white;
+        line-height: 1.7rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+.footer-social {
+    @include column;
+    text-align: center;
+    margin-bottom: 3rem;
+    &__heading {
+        @include subheading(2rem, _, $white);
+        margin-bottom: 2rem;
+    }
+    &__input-block {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.footer-social-link {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $white;
+    border-radius: 100%;
+    padding: .3rem;
+}
+
+.footer-social-target {
+    margin-right: 1rem;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.footer-contact {
+    @include column;
+    text-align: center;
+    &__heading {
+        @include heading($white);
+        margin-bottom: 1rem;
+    }
+    &__item {
+        color: $white;
+        margin-bottom: .5rem;
+    }
+}
+
+.footer-rights {
+    background-color: $gray;
+    padding: 1rem;
+    width: 100%;
+    &__item {
+        color: $white;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}

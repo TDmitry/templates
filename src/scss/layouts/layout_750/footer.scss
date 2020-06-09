@@ -1,0 +1,21 @@
+.footer {
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: 1.2rem;
+   &__item {
+       padding-top: 1rem;
+       flex: 1;
+       align-self: flex-start;
+       margin: 1%;
+   }
+}
+
+.footer-main {
+    &__text {
+        line-height: 2rem;
+    }
+}
+
+.footer-contact {
+    line-height: 2.5rem;
+}

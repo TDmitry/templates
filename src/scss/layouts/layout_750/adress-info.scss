@@ -1,0 +1,23 @@
+.adress-info {
+    border-bottom: 1px solid $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+.adress-info-block {
+    display: flex;
+    color: $white;
+    &__item {
+        margin-right: 1rem;
+        font-size: .8rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+.footer-social-link_top {
+    width: 35px;
+    height: 35px;
+    border: 0;
+}

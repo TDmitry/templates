@@ -1,0 +1,13 @@
+.footer-wrapper {
+    background-color: $red;
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    max-width: 1400px;
+}
+
+.footer-social-link:hover {
+    transform: scale(1.2);
+    transition: .4s;
+}

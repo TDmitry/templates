@@ -1,0 +1,38 @@
+.services {
+    grid-template-columns: repeat(3, auto);
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+
+        "title title title"
+        "use awesome customize"
+        "design app interface"
+        ;
+
+        @include e(item) {
+            padding: 2rem;
+            grid-gap: 2rem;
+            grid-template-rows: auto auto 1fr;
+            &:hover {
+                box-shadow: 0 0 15px $baseColor;
+                transition: .5s;
+                & .services__item-img{
+                    transform: scale(1.4);
+                    transition: .5s;
+                }
+            }
+            
+        }
+        
+        @include e(item-title) {
+            font-size: 1.3rem;
+        }
+        @include e(item-text) {
+            font-size: $baseFontSize;
+            line-height: 1.8;
+        }
+} 

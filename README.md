@@ -1,3 +1,5 @@
+ Rename "_src" folder to "src" for preview!
+
 # Webpack boilerplate with SASS(SCSS), HTML modules, Babel
 ## Features
 * Easy to start `yarn install` + `yarn start` (`npm install` + `npm start`)

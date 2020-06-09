@@ -1,0 +1,19 @@
+.logo {
+    max-width: 250px;
+    margin-left: 1rem;
+}
+
+.header-content {
+    &__item {
+        &_tagline {
+            font-size: 5rem;
+        }
+        &_heading {
+            font-size: 5rem;
+        }
+    }
+    &__text {
+        width: 70%;
+        line-height: 2rem;
+    }
+}

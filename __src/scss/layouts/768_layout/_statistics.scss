@@ -1,0 +1,17 @@
+.statistics {
+    background-color: $gray;
+}
+.statistics-container {
+    padding: 0 1rem;
+    @include e(title) {
+        grid-area: title;
+        font-size: 2.5rem;
+    }
+    @include e(subtitle) {
+        font-size: 1rem;
+    }
+    @include e(content) {
+        font-size: $tabFontSize;
+        margin-bottom: 1rem;
+    }
+}

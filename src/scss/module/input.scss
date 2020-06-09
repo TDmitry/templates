@@ -1,0 +1,27 @@
+.text-input {
+    border: 2px solid $gray;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    &:focus {
+        box-shadow: 0 0 10px $gray;
+        transition: .4s;
+    }
+    &::placeholder {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.social-input {
+    border: 1px solid $white;
+    padding: .7rem;
+    color: $white;
+    &:focus {
+        box-shadow: 0 0 10px $white;
+        transition: .4s;
+    }
+    &::placeholder {
+        color: $white;
+        text-transform: uppercase;
+    }
+}

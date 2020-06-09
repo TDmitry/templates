@@ -1,0 +1,35 @@
+.statistics {
+    background-color: $gray;
+    width: 100%;
+}
+.statistics-container {
+    grid-template-rows: auto 1fr 1fr 20%;
+    grid-template-columns: auto auto;
+    grid-gap: 0;
+    padding: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-areas: 
+        "subtitle img"
+        "title img"
+        "content img"
+        "btn img"
+    ;
+    @include e(title) {
+        align-self: center;
+        font-size: 4rem;
+    }
+    @include e(subtitle) {
+        margin-bottom: 1rem;
+    }
+    @include e(content) {
+        line-height: 2;
+        align-self: top;
+        margin-bottom: 2rem;
+        font-size: $baseFontSize;
+    }
+  }
+
+  .img-block_statistics {
+      box-shadow: none;
+  }

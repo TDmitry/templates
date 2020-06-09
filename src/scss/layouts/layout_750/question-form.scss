@@ -1,0 +1,9 @@
+.question-form-inner {
+    padding: 3rem;
+    &__heading {
+        @include heading($red, 2rem);
+    }
+    &__subheading {
+        @include subheading(2rem, 2rem)
+    }
+}

@@ -1,0 +1,13 @@
+.testimonials-feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials-feedback-block {
+    width: 50%;
+    padding: .5rem;
+    &__text {
+        min-height: 30vh;
+    }
+}

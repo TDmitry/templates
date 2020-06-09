@@ -1,0 +1,50 @@
+.event-menu-block {
+    padding: 2rem 1rem 5rem 1rem;
+    &__heading {
+        font-size: 3em;
+    }
+    &__subheading {
+        font-size: 3rem;
+    }
+}
+
+.event-menu-block-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-menu-block-block {
+    height: 100%;
+    width: 30%;
+    flex-grow: 1;
+    padding: 0 .5rem;
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+   
+}
+
+.event-menu-block-block-img-box {
+    padding: 3rem 0;
+    &_nobg {
+        min-height: 420px;
+    }
+    &__name {
+        font-size: 2rem;
+       
+    }
+    &__dish {
+        font-size: 1.5rem;
+        &_nobg {
+            font-size: 1.7rem;
+            padding: 0 .5rem;
+        }
+    }
+    &__price {
+        font-size: 1.5rem;
+    }
+    &__text {
+        margin: auto
+    }
+}

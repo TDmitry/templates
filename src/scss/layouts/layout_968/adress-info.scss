@@ -1,0 +1,16 @@
+.adress-info {
+    padding: .5rem 2rem;
+}
+
+.adress-info-block {
+    &__item {
+        font-size: 1.1rem;
+    }
+}
+
+.footer-social-link_top:hover {
+    border: 1px solid $red;
+    border-radius: 100%;
+    transform: scale(1.3);
+    transition: .3s;
+}

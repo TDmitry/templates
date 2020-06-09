@@ -1,0 +1,116 @@
+.menu-navigation {
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .3);
+    padding: 1.5rem;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+}
+
+.menu-navigation__logo-img {
+    width: 200px
+}
+// -------- menu ----------------
+.desktop-menu-container {
+    display: none;
+}
+
+.menu-button {
+    background: url(#{$imgPath}/svg/icons/bars-solid.svg) no-repeat;
+    height: 40px;
+    width: 50px;
+    align-self: center;
+}
+
+.mobile-menu-container {
+    position: fixed;
+    z-index: 20;
+    top: 4.5rem;
+    background-color: $baseColor;
+    color: $white;
+    width: 100%;
+    display: none;
+    font-size: 1.3rem;
+}
+
+.menu-mobile {
+    text-align: center;
+    border: 1px dotted $white;
+    @include e(item) {
+        padding: 1.5rem; 
+        border-bottom: 1px solid $white;  
+        text-decoration: none;
+    }
+    @include e(link) {
+        color: $white
+    }
+}
+
+// ------------ content ----------- 
+
+.learn-more-content {
+    display: grid;  
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "slogan"
+        "text-block"
+        "btn"
+        "img"
+    ;
+    grid-gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 650px;
+
+    @include e(slogan) {
+        font-size: 2.2rem;
+        grid-area: slogan;
+    }
+    @include e(text-block) {
+        line-height: 1.5;
+        font-size: $phFontSize;
+        grid-area: text-block
+    }
+    @include e(btn) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 370px;
+        grid-area: btn      
+    }
+
+   
+}
+
+.img-block {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .3);
+    margin-bottom: 1rem;
+    @include m(learn) {
+        grid-area: img;
+    }
+    @include e(item){
+    width: 100%;
+    min-width: 100%;
+    }
+}
+.btn {
+    border: 1px solid $baseColor;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+        
+   
+    @include m(download) {
+        background-color: $baseColor;
+        color: $white;
+    }
+    @include m(learnmore) {
+        
+        color: $baseColor;
+    }
+}

@@ -1,0 +1,67 @@
+.features { 
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    grid-template-rows:  auto repeat(3, 1fr);
+    grid-template-columns: 1fr 30% 1fr;
+    grid-template-areas: 
+        "title title title"
+        "design img workingform"
+        "purpose img kitties"
+        "responsive img techs"
+    ;
+    @include e(title) {
+        font-size: 3rem;
+        margin-bottom: 2rem
+    }
+    @include e(item-text) {
+        font-size: $baseFontSize; 
+    }
+    @include e(item) {
+        &:hover {
+            box-shadow: 0 0 15px $baseColor;
+            background-color: $white;
+            transform: scale(1.1);
+            color: $baseColor;
+            transition: .5s;
+        }
+        padding: 2rem;
+        @include m(design){
+            grid-template-areas: 
+                "item-title item-ico"
+                "item-text item-ico"
+                ;
+            }
+            @include m(purpose){
+            grid-template-areas: 
+                "item-title item-ico"
+                "item-text item-ico"
+                ;
+            }
+            @include m(responsive){
+            grid-template-areas: 
+                "item-title item-ico"
+                "item-text item-ico"
+                ;
+            }
+        @include m(workingform){
+            grid-template-areas: 
+                "item-ico item-title"
+                 "item-ico item-text"
+                ;
+            }
+            @include m(kitties){
+                grid-template-areas: 
+                "item-ico item-title"
+                 "item-ico item-text"
+                ;
+            }
+            @include m(techs){
+                grid-template-areas: 
+                "item-ico item-title"
+                 "item-ico item-text"
+                ;
+            }
+    }
+}
+

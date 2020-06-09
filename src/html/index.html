@@ -1,19 +1,337 @@
-<html lang="ru">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <title>Boilerplate</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Dmitry Travkin">
+    <meta name="description" content="RastBeef template website">
+    <title>RestBeef</title>
 </head>
+
 <body>
-<include>_header.html</include>
-<div class="grid-row">
-    <div class="grid-col--5">
-        <div class="cat">
-            <img src="assets/img/cat.jpg" width="100" alt="">
-            <div class="cat__photo"></div>
-            <div class="cat__title">Cat</div>
+    <header id="home" class="header">
+        <div class="adress-info">
+            <div class="adress-info-block">
+                <p class="adress-info-block__item adress-info-block__item_adress">817 N California Ave, Chicago, IL
+                    60622</p>
+                <p class="adress-info-block__item adress-info-block__item_number">+1 (234) 555 - 67 - 89</p>
+                <p class="adress-info-block__item adress-info-block__item_schedule">10:00 am - 11:00 pm</p>
+            </div>
+            <div class="footer-social__links footer-social__links_top">
+                <a class="footer-social-target footer-social-target_top" href="https://www.facebook.com"
+                    target="_blank"><img class="footer-social-link footer-social-link_top"
+                        src="../assets/img/svg/facebook-f-brands.svg" alt="facebook"></a>
+                <a class="footer-social-target footer-social-target_top" href="https://www.instagram.com"
+                    target="_blank"><img class="footer-social-link footer-social-link_top"
+                        src="../assets/img/svg/instagram-brands.svg" alt="instagram"></a>
+                <a class="footer-social-target footer-social-target_top" href="https://www.twitter.com"
+                    target="_blank"><img class="footer-social-link footer-social-link_top"
+                        src="../assets/img/svg/twitter-brands.svg" alt="twitter"></a>
+                <a class="footer-social-target footer-social-target_top" href="https://www.youtube.com"
+                    target="_blank"><img class="footer-social-link footer-social-link_top"
+                        src="../assets/img/svg/youtube-brands.svg" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="header-logo-block">
+            <div class="header-logo-block__item">
+                <img class="logo" src="../assets/img/logo.png" alt="logo">
+            </div>
+            <nav class="header-menu">
+                <ul id="menu" class="header-menu-list">
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#">home</a></li>
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#menu">menu</a></li>
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#story">story</a></li>
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#testimonials">testimonials</a></li>
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#form-block">contact form</a></li>
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#events">news</a></li>
+                    <li class="header-menu-list__item"><a class="header-menu-list__item header-menu-list__item_link"
+                            href="#contacts">contacts</a></li>
+                </ul>
+            </nav>
+            <button id="menu-btn" class="header-logo-block__menu-btn"></button>
+        </div>
+        <div class="header-content">
+            <h1 class="header-content__item header-content__item_tagline">Best Steaks and Grill</h1>
+            <h2 class="header-content__item header-content__item_heading">restbeef steakhouse</h2>
+            <p class="header-content__text">We are making the original steaks based on traditional recipes.
+                We use only fresh meat from the best suppliers. Our staff are professionals,
+                and we make everything to left our clients satisfied.
+            </p>
+            <div class="header-content-btn-block">
+                <button class="btn btn_red btn_margin">watch menu</button>
+                <button class="btn btn_white btn-book">book a table</button>
+            </div>
+        </div>
+    </header>
+    <div id="menu" class="event-menu-block">
+        <h2 class="event-menu-block__heading">freshly taste</h2>
+        <p class="event-menu-block__subheading">new in our menu</p>
+        <div class="event-menu-block-items">
+            <div class="event-menu-block-block">
+                <img class="event-menu-block-block__img" src="../assets/img/1.jpg" alt="img1">
+                <div class="event-menu-block-block-img-box">
+                    <span class="event-menu-block-block-img-box__price">15$</span>
+                    <p class="event-menu-block-block-img-box__name">season menu</p>
+                    <h3 class="event-menu-block-block-img-box__dish">spring burger</h3>
+                </div>
+            </div>
+            <div class="event-menu-block-block">
+                <img class="event-menu-block-block__img" src="../assets/img/2.jpg" alt="img1">
+                <div class="event-menu-block-block-img-box">
+                    <span class="event-menu-block-block-img-box__price">10$</span>
+                    <p class="event-menu-block-block-img-box__name">dessert menu</p>
+                    <h3 class="event-menu-block-block-img-box__dish">light breeze</h3>
+                </div>
+            </div>
+            <div class="event-menu-block-block">
+                <img class="event-menu-block-block__img" src="../assets/img/3.jpg" alt="img1">
+                <div class="event-menu-block-block-img-box">
+                    <span class="event-menu-block-block-img-box__price">25$</span>
+                    <p class="event-menu-block-block-img-box__name">steak menu</p>
+                    <h3 class="event-menu-block-block-img-box__dish">steak with fries</h3>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<a href="products.html">products.html</a>
-<include>_footer.html</include>
+    <div id="story" class="our-story">
+        <div class="our-story__inner">
+            <h2 class="our-story__inner-heading">our story</h2>
+            <p class="our-story__inner-subheading">how we begin</p>
+            <p class="our-story__content">
+                The Restbeef Steakhouse was est in 1989 in Chicago City. With more than 30 years of experience and base
+                on traditional recipes, we understand how to best serve our customers through tried service principles.
+                Instead of following trends, we set them. We create steaks and grill we’re proud to serve and deliver it
+                fast, with a smile. No matter where you find us, we’re making sure each meal our clients enjoy is
+                delicious and one-of-a-kind. Our steaks is always perfect and our professional team working hard to make
+                you happy.</p>
+            <button class="btn btn_white">learn more about us</button>
+        </div>
+    </div>
+    <div id="testimonials" class="testimonials">
+        <h2 class="testimonials__heading">our clients say</h2>
+        <p class="testimonials__subheading">testimonials</p>
+        <div class="testimonials-feedback">
+            <div class="testimonials-feedback-block">
+                <div class="testimonials-feedback-block__user">
+                    <div class="testimonials-feedback-block__user-icon"></div>
+                    <div class="testimonials-feedback-block-user">
+                        <div class="testimonials-feedback-block-user__user-name">john smith</div>
+                        <div class="testimonials-feedback-block-user__user-note">
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-regular.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-feedback-block__text">The Restbeef was one of the first restaurants I
+                    discovered upon moving to Chicago last summer. Perfect steaks, service on highest level. I recommend
+                    it to all people, who love tasty meat.</div>
+            </div>
+            <div class="testimonials-feedback-block">
+                <div class="testimonials-feedback-block__user">
+                    <div class="testimonials-feedback-block__user-icon"></div>
+                    <div class="testimonials-feedback-block-user">
+                        <div class="testimonials-feedback-block-user__user-name">megan knight</div>
+                        <div class="testimonials-feedback-block-user__user-note">
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-feedback-block__text">Love so much evening lounge music concert! It’s
+                    wonderful. But I’m vegetarian, so i don’t like meat, but there is a lot of salads and very tasty
+                    desserts, so i think everyone can find what to taste.</div>
+            </div>
+            <div class="testimonials-feedback-block">
+                <div class="testimonials-feedback-block__user">
+                    <div class="testimonials-feedback-block__user-icon"></div>
+                    <div class="testimonials-feedback-block-user">
+                        <div class="testimonials-feedback-block-user__user-name">dolores ford</div>
+                        <div class="testimonials-feedback-block-user__user-note">
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-regular.svg" />
+                            <img class="stars" src="../assets/img/svg/star-regular.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-feedback-block__text">Best service i’ve ever seen in Chicago. Very polite
+                    staff, beautiful serving and serving dishes. Love their burgers. At weekends they have special
+                    offers, that’s are very affordable for me and very tasty!.</div>
+            </div>
+            <div class="testimonials-feedback-block">
+                <div class="testimonials-feedback-block__user">
+                    <div class="testimonials-feedback-block__user-icon"></div>
+                    <div class="testimonials-feedback-block-user">
+                        <div class="testimonials-feedback-block-user__user-name">emmy snow</div>
+                        <div class="testimonials-feedback-block-user__user-note">
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-feedback-block__text">Very wide range of salads to select, but i don’t like
+                    places, where people eat poor animals. But my boyfriend like steaks and beer. That place has very
+                    skilled staff and fantasitc salads. Desserts are also best.</div>
+            </div>
+            <div class="testimonials-feedback-block">
+                <div class="testimonials-feedback-block__user">
+                    <div class="testimonials-feedback-block__user-icon"></div>
+                    <div class="testimonials-feedback-block-user">
+                        <div class="testimonials-feedback-block-user__user-name">frank stewart</div>
+                        <div class="testimonials-feedback-block-user__user-note">
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-regular.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-feedback-block__text">Me and my friends like spend weekend evenings in the
+                    Restbeef. Relaxing lounge music, wide range wine card, perfect meat. What else people need after
+                    hard working week? Maybe just more action...</div>
+            </div>
+            <div class="testimonials-feedback-block">
+                <div class="testimonials-feedback-block__user">
+                    <div class="testimonials-feedback-block__user-icon"></div>
+                    <div class="testimonials-feedback-block-user">
+                        <div class="testimonials-feedback-block-user__user-name">angela kelly</div>
+                        <div class="testimonials-feedback-block-user__user-note">
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-solid.svg" />
+                            <img class="stars" src="../assets/img/svg/star-regular.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-feedback-block__text">Me and my girlfriend are in love with this place. Here we
+                    met at first time and go here every week to taste awesome steaks and drink some beer, listening
+                    fantastic lounge music. Strongly recommend!</div>
+            </div>
+        </div>
+    </div>
+    <div id="form-block" class="question-form">
+        <div class="question-form-inner">
+            <h2 class="question-form-inner__heading">got questions?</h2>
+            <p class="question-form-inner__subheading">get in touch with us</p>
+            <form id="form" class="question-form-inner-form">
+                <div class="question-form-inner-form__input">
+                    <input class="text-input" type="text" placeholder="enter your name" required>
+                </div>
+                <div class="question-form-inner-form__input">
+                    <input class="text-input" type="email" placeholder="enter your email" required>
+                </div>
+                <textarea class="textarea" name="message" id="message" cols="30" rows="10"
+                    placeholder="leave your message here" required></textarea>
+                <button id="form-btn" type="submit" class="btn btn_white btn_question-form">send your message</button>
+            </form>
+        </div>
+    </div>
+    <div id="events" class="event-menu-block event-menu-block_graybg">
+        <h2 class="event-menu-block__heading">fresh news</h2>
+        <p class="event-menu-block__subheading">what's going on</p>
+        <div class="event-menu-block-items">
+            <div class="event-menu-block-block event-menu-block-block_graybg">
+                <img class="event-menu-block-block__img" src="../assets/img/recent_post01.jpg" alt="img1">
+                <div class="event-menu-block-block-img-box event-menu-block-block-img-box_nobg">
+                    <span class="event-menu-block-block-img-box__price event-menu-block-block-img-box__price_nobg">25
+                        apr</span>
+                    <h3 class="event-menu-block-block-img-box__dish event-menu-block-block-img-box__dish_nobg">how to
+                        select wine</h3>
+                    <p class="event-menu-block-block-img-box__text event-menu-block-block-img-box__text_nobg">In this
+                        article we will teach you to choose best wine. At first we must learn to determine which
+                        wine is suitable for what kind of dishes. We will start...</p>
+                    <button class="btn btn_white btn_learnmore">learn more</button>
+                </div>
+            </div>
+            <div class="event-menu-block-block event-menu-block-block_graybg">
+                <img class="event-menu-block-block__img" src="../assets/img/recent_post02.jpg" alt="img1">
+                <div class="event-menu-block-block-img-box event-menu-block-block-img-box_nobg">
+                    <span class="event-menu-block-block-img-box__price event-menu-block-block-img-box__price_nobg">23
+                        apr</span>
+                    <h3 class="event-menu-block-block-img-box__dish event-menu-block-block-img-box__dish_nobg">master
+                        class</h3>
+                    <p class="event-menu-block-block-img-box__text event-menu-block-block-img-box__text_nobg">In this
+                        video master class you will learn, how to create tasty and awesome meal in your own
+                        kitchen. Our chef will explain you some secrets of cooking and serve...</p>
+                    <button class="btn btn_white btn_learnmore">learn more</button>
+                </div>
+            </div>
+            <div class="event-menu-block-block event-menu-block-block_graybg">
+                <img class="event-menu-block-block__img" src="../assets/img/recent_post03.jpg" alt="img1">
+                <div class="event-menu-block-block-img-box event-menu-block-block-img-box_nobg">
+                    <span class="event-menu-block-block-img-box__price event-menu-block-block-img-box__price_nobg">22
+                        apr</span>
+                    <h3 class="event-menu-block-block-img-box__dish event-menu-block-block-img-box__dish_nobg">new
+                        vegetarian menu</h3>
+                    <p class="event-menu-block-block-img-box__text event-menu-block-block-img-box__text_nobg">We love
+                        all our clients. So we had decided to add this new menu for our clients, who prefer
+                        vegetarian meal instead of meat. This new menu will...</p>
+                    <button class="btn btn_white btn_learnmore">learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contacts" class="footer-wrapper">
+        <div class="footer">
+            <div class="up-btn"><a href="#home"><img class="up-btn__item" src="../assets/img/svg/angle-up-solid.svg"
+                        alt="up"></a></div>
+            <div class="footer__item footer-main">
+                <h2 class="footer-main__heading">about us</h2>
+                <p class="footer-main__text">The Restbeef Steakhouse was est in 1989 in Chicago City. With more than 30
+                    years of experience and base
+                    on traditional recipes, we understand how to best serve our customers through tried and true service
+                    principles.</p>
+            </div>
+            <div class="footer__item footer-social">
+                <h2 class="footer-social__heading">stay in touch</h2>
+                <form id="emails" class="footer-social__input-block">
+                    <input class="social-input" type="email" name="subscribe" id="subscribe"
+                        placeholder="enter your email" required>
+                    <button id="subscribe-btn" type="submit" class="btn_subscribe">subscribe</button>
+                </form>
+                <div class="footer-social__links">
+                    <a class="footer-social-target" href="https://www.facebook.com" target="_blank"><img
+                            class="footer-social-link" src="../assets/img/svg/facebook-f-brands.svg" alt="facebook"></a>
+                    <a class="footer-social-target" href="https://www.instagram.com" target="_blank"><img
+                            class="footer-social-link" src="../assets/img/svg/instagram-brands.svg" alt="instagram"></a>
+                    <a class="footer-social-target" href="https://www.twitter.com" target="_blank"><img
+                            class="footer-social-link" src="../assets/img/svg/twitter-brands.svg" alt="twitter"></a>
+                    <a class="footer-social-target" href="https://www.youtube.com" target="_blank"><img
+                            class="footer-social-link" src="../assets/img/svg/youtube-brands.svg" alt="youtube"></a>
+                </div>
+            </div>
+            <div class="footer__item footer-contact">
+                <h2 class="footer-contact__heading">contacts</h2>
+                <p class="footer-contact__item">817 N California Ave Chicago, IL 60622</p>
+                <p class="footer-contact__item">+1 (234) 555 - 67 - 89</p>
+                <p class="footer-contact__item">Everyday from 10am - 11pm</p>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-rights">
+        <p class="footer-rights__item">&copy; 2020 All right reserved</p>
+    </footer>
 </body>
+
+
 </html>

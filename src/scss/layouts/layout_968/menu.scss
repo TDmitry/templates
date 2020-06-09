@@ -1,0 +1,23 @@
+.header-menu-list {
+    margin-right: 1rem;
+    &__item {
+        font-size: 1rem;
+        margin-right: 1rem;
+        &:hover {
+            cursor: pointer;
+            color: $red;
+            transition: .4s;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .header-menu-list__item {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1250px) {
+    .header-menu-list__item {
+        font-size: 1.5rem;
+    }
+}

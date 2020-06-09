@@ -1,0 +1,16 @@
+@mixin heading($color: $red, $fontsize: 2.2rem) {
+    font-family: $cursive;
+    text-transform: capitalize;
+    font-size: $fontsize;
+    color: $color;
+    text-align: center;
+}
+@mixin subheading($fontsize: 2.2rem, $mb: 3rem, $color: $black) {
+    text-transform: uppercase;
+    font-size: $fontsize;
+    font-weight: 700;
+    font-family: $additional;
+    margin-bottom: $mb;
+    color: $color;
+    text-align: center;
+}

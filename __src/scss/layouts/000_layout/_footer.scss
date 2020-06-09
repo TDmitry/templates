@@ -1,0 +1,147 @@
+.background-wrapper {
+    background-color: $gray;
+}
+
+.contact-form {
+    display: grid;
+    margin-bottom: 3rem;
+    grid-gap: 2rem;
+    padding: 3rem 2em;
+    border-bottom: 1px solid $baseColor;
+    width: 100%;
+    background-color: $gray;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+        "title"
+        "name"
+        "email"
+        "message"
+        "btn"
+        "map"
+    ;
+
+    @include e(title) {
+        font-size: 1.5rem;
+        grid-area: title;
+        padding: 2rem 0;
+        border-bottom: 1px solid $baseColor;
+        grid-area: title;
+        justify-self: center;
+        text-transform: uppercase;
+    }
+    @include e(input-label) {
+        margin-bottom: 0.3rem;
+    } 
+    @include e(input) {
+        display: flex;
+        flex-direction: column;
+        max-width: 650px;
+
+        @include m(name) {
+            grid-area: name;
+            justify-self: center;
+            width: 100%;
+        }
+        @include m(email) {
+            grid-area: email;
+            justify-self: center;
+            width: 100%;
+        }
+    }
+    @include e(message) {
+        grid-area: message;
+        resize: none;
+        width: 100%;
+        font-family: $latoFont;
+
+    }
+}
+.contact-form__input-label-span {
+    color: $baseColor;
+    font-size: 1.3rem;
+}
+
+.form-input {
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 650px;
+    justify-self: center;
+    border: 1px solid $gray;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .3);;
+    &:focus {
+        box-shadow: 0 0 10px $baseColor
+    }
+}
+//  ------------------ send-message button --------------
+
+.btn_contact {
+    width: 100%;
+    max-width: 650px;
+    align-self: center;
+    justify-self: center ;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.disabled {
+   background-color: $white;
+   color: $baseColor;
+   border: 1px dotted $baseColor;
+   &:hover{
+    box-shadow: 0 0 0;
+    transform: 0;
+    transition: 0;
+   }
+}
+// ---------- error-input --------------
+
+.error {
+    color: $baseColor;
+    margin-bottom: .5rem;
+}
+
+// ------------- map ------------
+.map {
+    z-index: 0;
+    background-color: $gray;
+    @include e(title) {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 3rem;
+    }
+    @include e(container) {
+      position: relative;
+      padding-bottom: 80%;
+      height: 0;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+      & iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+
+      @include e(title) {
+          font-size: $phFontSize;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+          margin-bottom: 2px solid $baseColor;
+      }
+        @include e(subscribe) {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: $baseColor;
+      }
+  }

@@ -1,0 +1,89 @@
+.services {
+    padding: 1rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: 8% repeat(6, 1fr);
+    grid-template-areas: 
+        "title"
+        "use"
+        "awesome"
+        "customize"    
+        "design"
+        "app"
+        "interface"
+    ;
+    align-items: center;
+    justify-items: center;
+
+    @include e(title) {
+        font-size: 2rem;
+        padding: 2rem 0;
+        grid-area: title;
+        border-bottom: 1px solid $baseColor;
+    }
+    @include e(item) {
+        line-height: 1.8;
+        display: grid;
+        padding: 1rem .5rem;
+        grid-template-rows: 30% 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        max-width: 450px;
+
+        @include m(use) {
+            grid-area: use;
+        }
+        @include m(awesome) {
+            grid-area: awesome;
+        }
+        @include m(customize) {
+            grid-area: customize;
+        }
+        @include m(design) {
+            grid-area: design;
+        }
+        @include m(app) {
+            grid-area: app;
+        }
+        @include m(interface) {
+            grid-area: interface;
+        }
+    }
+    @include e(item-img) {
+        height: 70px;
+        width: 70px;
+        align-self: center;
+        justify-self: center;
+        @include m(use) {
+            background: url(#{$imgPath}svg/icons/cogs-solid.svg) no-repeat;
+        }
+        @include m(awesome) {
+            background: url(#{$imgPath}svg/icons/chart-line-solid.svg) no-repeat;
+        }
+        @include m(customize) {
+            background: url(#{$imgPath}/svg/icons/user-regular.svg) no-repeat;
+        }
+        @include m(design) {
+            background: url(#{$imgPath}/svg/icons/laptop-code-solid.svg) no-repeat;
+        }
+        @include m(app) {
+            background: url(#{$imgPath}/svg/icons/mobile-alt-solid.svg) no-repeat;
+            width: 45px;
+        }
+        @include m(interface) {
+            background: url(#{$imgPath}/svg/icons/paw-solid.svg) no-repeat;
+        }
+    }
+    @include e(item-title) {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    @include e(item-text) {
+        font-size: $phFontSize;
+        line-height: 1.4;
+    }
+}

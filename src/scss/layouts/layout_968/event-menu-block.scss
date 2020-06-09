@@ -1,0 +1,46 @@
+.event-menu-block {
+    &__heading {
+        font-size: 4rem;
+    }
+    &__subheading {
+        font-size: 4rem;
+    }
+}
+
+.event-menu-block-items {
+    max-width: 90%;
+    margin-bottom: 4rem;
+}
+
+
+@media screen and (min-width: 1050px ) {
+    .event-menu-block-items {
+        max-width: 1400px;
+    }
+    .event-menu-block-block-img-box {
+        &_nobg {
+            min-height: 450px;
+        }
+        &__name {
+            font-size: 2.5rem;
+        }
+        &__dish {
+            font-size: 2.5rem;
+            &_nobg {
+                font-size: 2rem;
+                padding: 0 .5rem;
+                margin-bottom: 0;
+                margin-top: 2rem;
+            }
+        }
+        &__price {
+            font-size: 2rem;
+            width: 150px;
+        }
+        &__text {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+

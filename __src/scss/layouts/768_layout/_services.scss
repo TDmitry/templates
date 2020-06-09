@@ -1,0 +1,21 @@
+.services {
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-areas: 
+
+        "title title"
+        "use awesome"
+        "customize design"
+        "app interface"
+        ;
+        @include e(item) {
+            line-height: 1.2;
+            grid-gap: 2rem;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @include e(item-text) {
+            font-size: $tabFontSize;
+        }
+}

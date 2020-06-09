@@ -1,0 +1,49 @@
+// -------- menu ----------------
+.desktop-menu-container {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.menu-desktop{
+    display: flex;
+
+    @include e(link) {
+        color: black;
+    }
+    
+    @include e(item) {
+        padding: 0 0.4rem;
+        vertical-align: middle; 
+        &:last-of-type {
+            padding-right: 0
+        }   
+    }
+}
+
+.menu-button {
+    display: none;
+}
+
+.mobile-menu-container {
+    display: none
+}
+.menu-mobile {
+    display: none;
+}
+
+// ------------ content ----------- 
+
+.learn-more-content {
+    grid-gap: 2rem;
+    padding: 3rem;
+    max-width: 100%;
+
+    @include e(slogan) {
+        font-size: 3rem;
+        grid-area: slogan;
+    }   
+    @include e(text-block) {
+        font-size: $tabFontSize;
+    }
+}

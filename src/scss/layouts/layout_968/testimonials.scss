@@ -1,0 +1,20 @@
+.testimonials {
+    &__heading {
+        font-size: 4rem;
+    }
+    &__subheading {
+        font-size: 4rem;
+    }
+}
+
+.testimonials-feedback {
+    max-width: 1400px;
+}
+
+.testimonials-feedback-block {
+    width: 32%;
+    padding: .5rem;
+    &__text {
+        min-height: 25vh;
+    }
+}
