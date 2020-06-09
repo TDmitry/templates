@@ -14,3 +14,9 @@
         height: 70px;
     }
 }
+
+.btn-transition {
+    background-image: url(../../../assets/img/svg/icons/angle-down-solid.svg);
+    background-size: 50px 50px;
+    transition: .4s;
+}

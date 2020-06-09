@@ -7,13 +7,18 @@ const formBtn = document.getElementById('send-message');
 document.addEventListener('click', ({ target }) => {
     if (window.screen.width >= 768 || target !== btn) {
         menu.classList.remove('active');
+        btn.classList.remove('btn-transition');
         return;
     }
+    btn.classList.toggle('btn-transition');
     menu.classList.toggle('active');
 });
 
 window.addEventListener('resize', function () {
-    if (window.screen.width >= 768) menu.classList.remove('active');
+    if (window.screen.width >= 768) {
+        menu.classList.remove('active');
+        btn.classList.remove('btn-transition');
+    }
 });
 
 sendForm.addEventListener('submit', (e) => {
