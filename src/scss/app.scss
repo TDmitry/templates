@@ -1,12 +1,10 @@
 @import 'variables';
+@import 'base/fonts';
+@import 'base/base';
 @import 'mixin';
 @import 'module';
 
-@import 'base/base';
-@import 'base/fonts';
-
 @import './layouts/layout_000/';
-
 @media screen and (min-width: 768px) {
     @import './layouts/layout_750/'
 }

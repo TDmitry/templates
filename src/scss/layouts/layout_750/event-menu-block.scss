@@ -13,7 +13,7 @@
     justify-content: space-between;
 }
 
-.event-menu-block-block {
+.event-menu-block-container {
     height: 100%;
     width: 30%;
     flex-grow: 1;
@@ -25,7 +25,7 @@
    
 }
 
-.event-menu-block-block-img-box {
+.event-menu-block-container-img-box {
     padding: 3rem 0;
     &_nobg {
         min-height: 420px;

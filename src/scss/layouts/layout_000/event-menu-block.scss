@@ -13,7 +13,7 @@
     }
 }
 
-.event-menu-block-block {
+.event-menu-block-container {
    @include column;
     text-align: center;
     padding: .5rem 0;
@@ -24,7 +24,7 @@
    
 }
 
-.event-menu-block-block-img-box {
+.event-menu-block-container-img-box {
     @include column;
     background: url('../../../assets/img/products_background.jpg') no-repeat;
     background-size: cover;

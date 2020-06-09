@@ -3,6 +3,7 @@ const menu = document.getElementById('mobile-menu-container');
 const sendForm = document.getElementById('form');
 const formBtn = document.getElementById('send-message');
 
+
 document.addEventListener('click', ({ target }) => {
     if (window.screen.width >= 768 || target !== btn) {
         menu.classList.remove('active');
@@ -20,4 +21,10 @@ sendForm.addEventListener('submit', (e) => {
     sendForm.reset();
     formBtn.classList.add('disabled');
     formBtn.textContent = 'Thank you!';
+});
+
+window.addEventListener('scroll', () => {
+    const stick = document.getElementById('stick-btn');
+    if (window.pageYOffset < 400) stick.style.cssText = 'display: none';
+    else stick.style.cssText = 'display: block';
 });
