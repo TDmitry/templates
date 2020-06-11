@@ -41,7 +41,7 @@ bookContainerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     bookContainer.style.display = 'none';
     btnBook.setAttribute('disabled', true);
-    btnBook.textContent = 'Thank you!';
+    btnBook.textContent = 'Request sent';
     btnBook.style.opacity = '.5';
 });
 // phone number correct
