@@ -29,6 +29,9 @@ a:focus {
     color: inherit;
 }
 
+label {
+    display: block;
+}
 input {
     border: 0;
     background: transparent;

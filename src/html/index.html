@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="author" content="Dmitry Travkin">
     <meta name="description" content="RastBeef template website">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>RestBeef</title>
 </head>
 
@@ -17,7 +17,8 @@
             <div class="adress-info-block">
                 <p class="adress-info-block__item adress-info-block__item_adress">817 N California Ave, Chicago, IL
                     60622</p>
-                <p class="adress-info-block__item adress-info-block__item_number"><a href="tel:+1 (234) 555 - 67 - 89">+1 (234) 555 - 67 - 89</a></p>
+                <p class="adress-info-block__item adress-info-block__item_number"><a
+                        href="tel:+1 (234) 555 - 67 - 89">+1 (234) 555 - 67 - 89</a></p>
                 <p class="adress-info-block__item adress-info-block__item_schedule">10:00 am - 11:00 pm</p>
             </div>
             <div class="footer-social__links footer-social__links_top">
@@ -68,7 +69,41 @@
             </p>
             <div class="header-content-btn-block">
                 <button class="btn btn_red btn_margin">watch menu</button>
-                <button class="btn btn_white btn-book">book a table</button>
+                <button id="btnBook" class="btn btn_white btn-book">book a table</button>
+            </div>
+        </div>
+        <div id="book-container" class="book-container">
+            <div class="book-container-inner">
+                <form id="bookContainerForm" class="book-container-inner-form">
+                    <h2 class="book-container-inner-form__heading">Book your table</h2>
+                    <div class="book-container-inner-form__item">
+                        <label class="input-label" for="yourName">Name</label>
+                        <input class="text-input" name="yourName" id="yourName" type="text" minlength="2" autocomplete="off" required>
+                    </div>
+                    <div class="book-container-inner-form__item">
+                        <label class="input-label" for="phoneNumber">Phone number</label>
+                        <input class="text-input" name="phoneNumber" id="phoneNumber" type="text" autocomplete="off" required>
+                    </div>
+                    <div class="book-container-inner-form__item">
+                        <label for="selectPers" class="input-label">How many persons?</label>
+                        <select id="selectPers" name="selectPers" class="select-block" required>
+                            <option class="select-block__option" value="">Choose here</option>
+                            <option class="select-block__option" value="1">1</option>
+                            <option class="select-block__option" value="2">2</option>
+                            <option class="select-block__option" value="3">3</option>
+                            <option class="select-block__option" value="4">4</option>
+                            <option class="select-block__option" value="5">5 or more</option>
+                        </select>
+                    </div>
+                    <div class="book-container-inner-form__item">
+                        <label class="input-label" for="date">Date</label>
+                        <input id="datepicker" class="text-input" name="date" type="date" required>
+                    </div>
+                    <div class="book-container-inner-form__btns">
+                        <button id="bookFormCancelBtn" class="btn btn_red btn_booking">Cancel</button>
+                        <button id="bookFormAffirmBtn" class="btn btn_white btn_booking">Book!</button>
+                    </div>
+                </form>
             </div>
         </div>
     </header>
@@ -254,11 +289,14 @@
             <div class="event-menu-block-container event-menu-block-container_graybg">
                 <img class="event-menu-block-container__img" src="../assets/img/recent_post01.jpg" alt="img1">
                 <div class="event-menu-block-container-img-box event-menu-block-container-img-box_nobg">
-                    <span class="event-menu-block-container-img-box__price event-menu-block-container-img-box__price_nobg">25
+                    <span
+                        class="event-menu-block-container-img-box__price event-menu-block-container-img-box__price_nobg">25
                         apr</span>
-                    <h3 class="event-menu-block-container-img-box__dish event-menu-block-container-img-box__dish_nobg">how to
+                    <h3 class="event-menu-block-container-img-box__dish event-menu-block-container-img-box__dish_nobg">
+                        how to
                         select wine</h3>
-                    <p class="event-menu-block-container-img-box__text event-menu-block-container-img-box__text_nobg">In this
+                    <p class="event-menu-block-container-img-box__text event-menu-block-container-img-box__text_nobg">In
+                        this
                         article we will teach you to choose best wine. At first we must learn to determine which
                         wine is suitable for what kind of dishes. We will start...</p>
                     <button class="btn btn_white btn_learnmore">learn more</button>
@@ -267,11 +305,14 @@
             <div class="event-menu-block-container event-menu-block-container_graybg">
                 <img class="event-menu-block-container__img" src="../assets/img/recent_post02.jpg" alt="img1">
                 <div class="event-menu-block-container-img-box event-menu-block-container-img-box_nobg">
-                    <span class="event-menu-block-container-img-box__price event-menu-block-container-img-box__price_nobg">23
+                    <span
+                        class="event-menu-block-container-img-box__price event-menu-block-container-img-box__price_nobg">23
                         apr</span>
-                    <h3 class="event-menu-block-container-img-box__dish event-menu-block-container-img-box__dish_nobg">master
+                    <h3 class="event-menu-block-container-img-box__dish event-menu-block-container-img-box__dish_nobg">
+                        master
                         class</h3>
-                    <p class="event-menu-block-container-img-box__text event-menu-block-container-img-box__text_nobg">In this
+                    <p class="event-menu-block-container-img-box__text event-menu-block-container-img-box__text_nobg">In
+                        this
                         video master class you will learn, how to create tasty and awesome meal in your own
                         kitchen. Our chef will explain you some secrets of cooking and serve...</p>
                     <button class="btn btn_white btn_learnmore">learn more</button>
@@ -280,11 +321,14 @@
             <div class="event-menu-block-container event-menu-block-container_graybg">
                 <img class="event-menu-block-container__img" src="../assets/img/recent_post03.jpg" alt="img1">
                 <div class="event-menu-block-container-img-box event-menu-block-container-img-box_nobg">
-                    <span class="event-menu-block-container-img-box__price event-menu-block-container-img-box__price_nobg">22
+                    <span
+                        class="event-menu-block-container-img-box__price event-menu-block-container-img-box__price_nobg">22
                         apr</span>
-                    <h3 class="event-menu-block-container-img-box__dish event-menu-block-container-img-box__dish_nobg">new
+                    <h3 class="event-menu-block-container-img-box__dish event-menu-block-container-img-box__dish_nobg">
+                        new
                         vegetarian menu</h3>
-                    <p class="event-menu-block-container-img-box__text event-menu-block-container-img-box__text_nobg">We love
+                    <p class="event-menu-block-container-img-box__text event-menu-block-container-img-box__text_nobg">We
+                        love
                         all our clients. So we had decided to add this new menu for our clients, who prefer
                         vegetarian meal instead of meat. This new menu will...</p>
                     <button class="btn btn_white btn_learnmore">learn more</button>
